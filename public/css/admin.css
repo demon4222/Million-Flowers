@@ -1,0 +1,162 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+ @font-face {
+  font-family: latoregular; 
+  src: url(/fonts/LatoRegular.woff); 
+}
+@font-face {
+  font-family: latobold; 
+  src: url(/fonts/LatoBold.woff); 
+}
+body{
+font-family: latoregular,latobold,lucida grande,Tahoma,Sans-Serif;
+  font-size: 16px;
+  color: #333333; overflow-x: hidden;
+  background-color: rgba(0,0,0,.7);
+}
+
+#page-content-wrapper{
+  background-color: white;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+.list-group-item{
+  background-color: #343a40!important;
+  color:white;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+/*nav-edit*/
+.items-wrapper{
+    display: flex!important;
+    border:1px solid black;
+    max-width: 600px;
+    min-height: 400px;
+}
+.composition_bouquets, .usual_bouquets{
+  width: 50%;
+  text-align:center;
+}
+.composition_bouquets{
+  border-right:1px solid black;
+}
+.bouquets_list li{
+  list-style-type: none;
+  text-align: left;
+}
+
+
+#subTypeSelect{
+  display: none;
+}
+
+.card a{
+  background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+  background-size: cover;
+    max-height: 420px;
+    max-width: 420px;
+}
+.card-img-top{
+    width:100%;
+    height: 100%;
+}
+.card a img{
+  opacity: 0;
+  transition: 0.3s;
+    max-height: 420px;
+    max-width: 420px;
+}
+.card a img:hover{
+  opacity:1;
+}
+
+.day{
+  background-color: forestgreen;
+  color:white;
+  position: absolute;
+  bottom: 8.65rem;
+}
+.stock{
+  background-color: red;
+  color:black;
+  position: absolute;
+  top: 0;
+  right:0;
+}
+
+.page-item.active .page-link {
+	background-color: #a72896f0;
+	border-color: #a72896f0;
+}
+.page-link{
+	color:black;
+}
+.paginator-block{
+	margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+}
+
+.cart-count {
+    display: inline-block;
+    background: #FFD94D;
+    color: #212121;
+    line-height: 0;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.cart-count span {
+    display: inline-block;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+
+
+
