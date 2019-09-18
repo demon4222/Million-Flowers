@@ -19,6 +19,9 @@
 
 Route::get('/', 'HomeController@index');
 
+Route::get('/about', 'HomeController@about');
+Route::get('/delivery', 'HomeController@delivery');
+
 Route::post('/storeOrder', 'OrderController@storeOrder')->name('orders.store');
 
 Route::get('/cart', 'CartController@index')->name('cart.index');

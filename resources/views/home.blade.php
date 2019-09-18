@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <link rel="shortcut icon" href="img/brand.png" type="image/png">
     <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
     <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
@@ -94,7 +94,7 @@
                             @endforeach
                         </ul>
                     </li>
-                    @endforeach                    
+                    @endforeach
                 </ul>
             </li>
 
@@ -122,49 +122,49 @@
                     <li>
                         <a class="cd-nav-item item-1" href="#">
                             <h3>Додаткові комплектуючі</h3>
-                            
+
                         </a>
                     </li>
 
                     <li>
-                        <a class="cd-nav-item item-2" href="#">
+                        <a class="cd-nav-item item-2" href="{{action('HomeController@delivery')}}">
                             <h3>Безкоштовна доставка</h3>
-                            
+
                         </a>
                     </li>
 
                     <li>
                         <a class="cd-nav-item item-3" href="#">
                             <h3>Індивідуальне оформлення</h3>
-                            
+
                         </a>
                     </li>
 
                     <li>
                         <a class="cd-nav-item item-4" href="#">
                             <h3>Доставка у неробочій час</h3>
-                            
+
                         </a>
                     </li>
 
                     <li>
                         <a class="cd-nav-item item-5" href="#">
                             <h3>Фото перед відправкою</h3>
-                            
+
                         </a>
                     </li>
 
                     <li>
                         <a class="cd-nav-item item-6" href="#">
                             <h3>Листівка</h3>
-                            
+
                         </a>
                     </li>
 
                 </ul>
             </li>
 
-            <li><a href="#">Про нас</a></li>
+            <li><a href="{{action('HomeController@about')}}">Про нас</a></li>
         </ul> <!-- primary-nav -->
     </nav> <!-- cd-nav -->
 
@@ -178,7 +178,7 @@
   @include('layouts.footer')
   <!-- Footer -->
     <!--nav-->
-    
+
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
         <script src="js/jquery-2.1.1.js"></script>
         <script src="js/jquery.mobile.custom.min.js"></script>

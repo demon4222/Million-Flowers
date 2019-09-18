@@ -125,7 +125,7 @@
                 </li>
 
                 <li>
-                    <a class="cd-nav-item item-2" href="#">
+                    <a class="cd-nav-item item-2" href="{{action('HomeController@delivery')}}">
                         <h3>Безкоштовна доставка</h3>
 
                     </a>

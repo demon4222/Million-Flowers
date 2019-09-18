@@ -46,4 +46,14 @@ class HomeController extends Controller
         return view('home', compact('types','flowerCategory','head_slides','hits_slides','hits_slides_prices','bouquetOfTheDay'));
     }
 
+    public function about()
+    {
+        return view('user.about');
+    }
+
+    public function delivery()
+    {
+        return view('user.delivery');
+    }
+
 }
