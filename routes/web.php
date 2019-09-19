@@ -21,6 +21,11 @@ Route::get('/', 'HomeController@index');
 
 Route::get('/about', 'HomeController@about');
 Route::get('/delivery', 'HomeController@delivery');
+Route::get('/pay', 'HomeController@pay');
+Route::get('/recommendation', 'HomeController@recommendation');
+Route::get('/garanties', 'HomeController@garanties');
+Route::get('/contacts', 'HomeController@contacts');
+Route::get('/shops', 'HomeController@shops');
 
 Route::post('/storeOrder', 'OrderController@storeOrder')->name('orders.store');
 

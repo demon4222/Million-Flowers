@@ -12,13 +12,13 @@
           <div class="footer-menu-title mb-3">Про нас</div>
           <ul class="footer-menu-links">
             <li>
-              <a href="" class="footer-menu-link">Про компанію</a>
+              <a href="{{action('HomeController@about')}}" class="footer-menu-link">Про компанію</a>
             </li>
             <li>
-              <a href="" class="footer-menu-link">Магазини</a>
+              <a href="{{action('HomeController@shops')}}" class="footer-menu-link">Магазини</a>
             </li>
             <li>
-              <a href="" class="footer-menu-link">Контакти</a>
+              <a href="{{action('HomeController@contacts')}}" class="footer-menu-link">Контакти</a>
             </li>
           </ul>
         </div>
@@ -26,19 +26,16 @@
           <div class="footer-menu-title mb-3">Інформація</div>
           <ul class="footer-menu-links">
             <li>
-              <a href="" class="footer-menu-link">Доставка</a>
+              <a href="{{action('HomeController@delivery')}}" class="footer-menu-link">Доставка</a>
             </li>
             <li>
-              <a href="" class="footer-menu-link">Оплата</a>
+              <a href="{{action('HomeController@pay')}}" class="footer-menu-link">Оплата</a>
             </li>
             <li>
-              <a href="" class="footer-menu-link">Гарантії</a>
+              <a href="{{action('HomeController@garanties')}}" class="footer-menu-link">Гарантії</a>
             </li>
             <li>
-              <a href="" class="footer-menu-link">Рекомендації</a>
-            </li>
-            <li>
-              <a href="" class="footer-menu-link">Політика Конфіденційності</a>
+              <a href="{{action('HomeController@recommendation')}}" class="footer-menu-link">Рекомендації</a>
             </li>
           </ul>
         </div>
@@ -50,6 +47,17 @@
               <a href="https://www.instagram.com/million.flowers.vn/?hl=ru" target="_blank" class="footer-menu-link inst">
                   Instagram
               </a>
+            </li>
+              <li>
+                <a href="https://www.facebook.com/million.flowers.vn" target="_blank" class="footer-menu-link inst">
+                  Facebook
+              </a>
+              </li>
+              <li>
+                <a href="t.me/millionflowersvn" target="_blank" class="footer-menu-link inst">
+                    Telegram
+                </a>
+              </li>
             </li>
           </ul>
         </div>

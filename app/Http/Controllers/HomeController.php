@@ -56,4 +56,28 @@ class HomeController extends Controller
         return view('user.delivery');
     }
 
+    public function pay()
+    {
+        return view('user.pay');
+    }
+
+    public function recommendation()
+    {
+        return view('user.recommendation');
+    }
+
+    public function garanties()
+    {
+        return view('user.garanties');
+    }
+
+    public function contacts()
+    {
+        return view('user.contacts');
+    }
+
+    public  function shops()
+    {
+        return view('user.shops');
+    }
 }
