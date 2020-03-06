@@ -68,9 +68,6 @@
               <a href="tel:(093)-535-91-80" class="footer-menu-link">(093)-535-91-80 (Viber/Telegram)</a>
             </li>
             <li>
-              <a href="tel:(096)-096-03-23" class="footer-menu-link">(096)-096-03-23</a>
-            </li>
-            <li>
               <a href="mailto:million.flowers.vn@gmail.com" class="footer-menu-link">million.flowers.vn@gmail.com</a>
             </li>
           </ul>

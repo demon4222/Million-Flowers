@@ -361,7 +361,7 @@
                         <div class="need-help_message mb-1">
                             Телефон служби підтримки:
                         </div>
-                        <a class="need-help_phone" href="tel:38096096023">+380 (96)-096-03-23</a>
+{{--                        <a class="need-help_phone" href="tel:38096096023">+380 (96)-096-03-23</a>--}}
                     </div>
                     <div class="make-order">
                         <!-- <input type="hidden" name="complete_order" value="Оформить заказ">
