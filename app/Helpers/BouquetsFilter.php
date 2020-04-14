@@ -30,9 +30,9 @@ class BouquetsFilter
                 $this->$filter($value);
             }
         }
-//        if ((isset($this->filters()['_url'])&&(count($this->filters()) == 1) || (count($this->filters()) == 2 && isset($this->filters()['page'])))) {
-//            $this->builder = $this->builder->paginate($this->perPage);
-//        }
+        if ((isset($this->filters()['_url'])&&(count($this->filters()) == 1) || (count($this->filters()) == 2 && isset($this->filters()['page'])))) {
+            $this->builder = $this->builder->paginate($this->perPage);
+        }
         $this->builder = $this->builder->paginate($this->perPage);
         return $this->builder;
     }
