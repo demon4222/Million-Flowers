@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -53,9 +53,9 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main components 
+Main components
 
 -------------------------------- */
 .cd-main-content, .cd-main-header {
@@ -1038,9 +1038,9 @@ Main components
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-support for no js 
+support for no js
 
 -------------------------------- */
 .no-js .cd-primary-nav {
