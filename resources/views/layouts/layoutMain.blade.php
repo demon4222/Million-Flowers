@@ -75,93 +75,95 @@
 
 <nav class="cd-nav">
     <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
-        <li class="has-children">
-            <a href="#">Букети</a>
+        <li><a href="{{action('BouquetController@index')}}">Букети</a></li>
+        <li><a href="{{action('FlowerController@index')}}">Квіти поштучно</a></li>
+{{--        <li class="has-children">--}}
+{{--            <a href="">Букети</a>--}}
 
-            <ul class="cd-secondary-nav is-hidden">
-                <li class="go-back"><a href="#0">Меню</a></li>
-                <li class="see-all"><a href="/bouquets">Усі букети</a></li>
-                @foreach($types as $type)
-                    <li class="has-children">
-                        <a href="/bouquet-types/{{$type->slug}}">{{$type->name}}</a>
-                        <ul class="is-hidden">
-                            <li class="go-back"><a href="#0">Букети</a></li>
-                            <li class="see-all"><a href="/bouquet-types/{{$type->slug}}">{{$type->name}}</a></li>
-                            @foreach($type->bouquetsSubTypes as $subType)
-                                <li><a href="/bouquet-sub-types/{{$subType->slug}}">{{$subType->name}}</a></li>
-                            @endforeach
-                        </ul>
-                    </li>
-                @endforeach
-            </ul>
-        </li>
+{{--            <ul class="cd-secondary-nav is-hidden">--}}
+{{--                <li class="go-back"><a href="#0">Меню</a></li>--}}
+{{--                <li class="see-all"><a href="/bouquets">Усі букети</a></li>--}}
+{{--                @foreach($types as $type)--}}
+{{--                    <li class="has-children">--}}
+{{--                        <a href="/bouquet-types/{{$type->slug}}">{{$type->name}}</a>--}}
+{{--                        <ul class="is-hidden">--}}
+{{--                            <li class="go-back"><a href="#0">Букети</a></li>--}}
+{{--                            <li class="see-all"><a href="/bouquet-types/{{$type->slug}}">{{$type->name}}</a></li>--}}
+{{--                            @foreach($type->bouquetsSubTypes as $subType)--}}
+{{--                                <li><a href="/bouquet-sub-types/{{$subType->slug}}">{{$subType->name}}</a></li>--}}
+{{--                            @endforeach--}}
+{{--                        </ul>--}}
+{{--                    </li>--}}
+{{--                @endforeach--}}
+{{--            </ul>--}}
+{{--        </li>--}}
 
-        <li class="has-children">
-            <a href="#">Квіти поштучно</a>
+{{--        <li class="has-children">--}}
+{{--            <a href="#">Квіти поштучно</a>--}}
 
-            <ul class="cd-secondary-nav is-hidden">
-                <li class="go-back"><a href="#0">Навігація</a></li>
-                <li class="see-all"><a href="{{route('flowers.index')}}">Усі квіти</a></li>
-                @foreach($flowerCategory as $category)
-                    <li>
-                        <a class="type-link" href="/flower-type/{{$category->slug}}">
-                            {{$category->name}}
-                        </a>
-                    </li>
-                @endforeach
-            </ul>
-        </li>
+{{--            <ul class="cd-secondary-nav is-hidden">--}}
+{{--                <li class="go-back"><a href="#0">Навігація</a></li>--}}
+{{--                <li class="see-all"><a href="{{route('flowers.index')}}">Усі квіти</a></li>--}}
+{{--                @foreach($flowerCategory as $category)--}}
+{{--                    <li>--}}
+{{--                        <a class="type-link" href="/flower-type/{{$category->slug}}">--}}
+{{--                            {{$category->name}}--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                @endforeach--}}
+{{--            </ul>--}}
+{{--        </li>--}}
 
-        <li class="has-children">
-            <a href="#">Послуги</a>
-            <ul class="cd-nav-icons is-hidden" style="padding-bottom: 48px;">
-                <li class="go-back"><a href="#0">Меню послуг</a></li>
-                {{--                    <li class="see-all"><a href="#">Дивитися послуги</a></li>--}}
-                <li>
-                    <a class="cd-nav-item item-1" href="#">
-                        <h3>Додаткові комплектуючі</h3>
+{{--        <li class="has-children">--}}
+{{--            <a href="#">Послуги</a>--}}
+{{--            <ul class="cd-nav-icons is-hidden" style="padding-bottom: 48px;">--}}
+{{--                <li class="go-back"><a href="#0">Меню послуг</a></li>--}}
+{{--                --}}{{--                    <li class="see-all"><a href="#">Дивитися послуги</a></li>--}}
+{{--                <li>--}}
+{{--                    <a class="cd-nav-item item-1" href="#">--}}
+{{--                        <h3>Додаткові комплектуючі</h3>--}}
 
-                    </a>
-                </li>
+{{--                    </a>--}}
+{{--                </li>--}}
 
-                <li>
-                    <a class="cd-nav-item item-2" href="{{action('HomeController@delivery')}}">
-                        <h3>Безкоштовна доставка</h3>
+{{--                <li>--}}
+{{--                    <a class="cd-nav-item item-2" href="{{action('HomeController@delivery')}}">--}}
+{{--                        <h3>Безкоштовна доставка</h3>--}}
 
-                    </a>
-                </li>
+{{--                    </a>--}}
+{{--                </li>--}}
 
-                <li>
-                    <a class="cd-nav-item item-3" href="#">
-                        <h3>Індивідуальне оформлення</h3>
+{{--                <li>--}}
+{{--                    <a class="cd-nav-item item-3" href="#">--}}
+{{--                        <h3>Індивідуальне оформлення</h3>--}}
 
-                    </a>
-                </li>
+{{--                    </a>--}}
+{{--                </li>--}}
 
-                <li>
-                    <a class="cd-nav-item item-4" href="#">
-                        <h3>Доставка у неробочій час</h3>
+{{--                <li>--}}
+{{--                    <a class="cd-nav-item item-4" href="#">--}}
+{{--                        <h3>Доставка у неробочій час</h3>--}}
 
-                    </a>
-                </li>
+{{--                    </a>--}}
+{{--                </li>--}}
 
-                <li>
-                    <a class="cd-nav-item item-5" href="#">
-                        <h3>Фото перед відправкою</h3>
+{{--                <li>--}}
+{{--                    <a class="cd-nav-item item-5" href="#">--}}
+{{--                        <h3>Фото перед відправкою</h3>--}}
 
-                    </a>
-                </li>
+{{--                    </a>--}}
+{{--                </li>--}}
 
-                <li>
-                    <a class="cd-nav-item item-6" href="#">
-                        <h3>Листівка</h3>
+{{--                <li>--}}
+{{--                    <a class="cd-nav-item item-6" href="#">--}}
+{{--                        <h3>Листівка</h3>--}}
 
-                    </a>
-                </li>
-            </ul>
-        </li>
-
-        <li><a href="#">Про нас</a></li>
+{{--                    </a>--}}
+{{--                </li>--}}
+{{--            </ul>--}}
+{{--        </li>--}}
+        <li><a href="{{action('HomeController@delivery')}}">Доставка</a></li>
+        <li><a href="{{action('HomeController@about')}}">Про нас</a></li>
     </ul>
 </nav>
 

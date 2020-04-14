@@ -75,7 +75,7 @@
                                 <div class="cart_item_product d-flex flex-row align-items-center justify-content-start">
                                     <div class="cart_item_image">
                                         <div>
-                                            @if($item->options->caregory=='bouquet')
+                                            @if($item->options['category']=='bouquet')
                                                 <img
                                                     src="{{asset('media/bouquets/' . $item->model->id . '/' . $item->options->size . '_m.jpg')}}">
                                             @else

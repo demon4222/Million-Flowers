@@ -39,7 +39,7 @@ class HitsSliderRepositoryEloquent extends BaseRepository implements HitsSliderR
     {
         if($this->findWhere(['bouquet_id' => $bouquet_id])->first()!==null)
         {
-            
+
         }
         else
         {
@@ -54,5 +54,5 @@ class HitsSliderRepositoryEloquent extends BaseRepository implements HitsSliderR
     {
         $this->pushCriteria(app(RequestCriteria::class));
     }
-    
+
 }

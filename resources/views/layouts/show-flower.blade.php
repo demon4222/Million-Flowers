@@ -63,7 +63,7 @@
 						@endforeach
 						</ul>
 					</div>
-					
+
 					<div class="product-qty form-group mt-5">
 						<div class="select-qty">
 							<label class="select-qty__label">Виберіть кількість</label>
@@ -101,7 +101,7 @@
 					</div>
 					<div class="description-block mt-4">
 						<h3><strong>Доставка</strong></h3>
-						<p>інформація</p>
+						<p>Доставка по Вінниці працює кожного дня з 10:00-20:00. Доставка безкоштовна на замовлення від 300 грн. Мінімальне замовлення на доставку від 100 грн. Вартість доставки складає - 30 грн</p>
 					</div>
 				</div>
 			</div>

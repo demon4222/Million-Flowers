@@ -31,7 +31,7 @@ class BouquetRepositoryEloquent extends BaseRepository implements BouquetReposit
         $this->bouquetSize = $bouquetSize;
         parent::__construct($app);
     }
-    
+
     /**
      * Specify Model class name
      *
@@ -93,11 +93,11 @@ class BouquetRepositoryEloquent extends BaseRepository implements BouquetReposit
 
     public function getForEdit($id)
     {
-        
+
         $bouquet = $this->find($id);
-        $subTypeId = $bouquet->sub_type_id;        
+        $subTypeId = $bouquet->sub_type_id;
         $subType = $this->subType->find($subTypeId);
-        $type = $this->subType->findParentType($subTypeId);      
+        $type = $this->subType->findParentType($subTypeId);
         $bouquetSizes = $bouquet->sizes->toArray();
         $data = [
             'name' => $bouquet->name,
@@ -167,7 +167,7 @@ class BouquetRepositoryEloquent extends BaseRepository implements BouquetReposit
                         FileUploadController::uploadBouquetPhoto($req->add_photo[$i],$bouquet->id,$size->id,'a');
                 }
             }
-            if(isset($req->general_photo))    
+            if(isset($req->general_photo))
                 FileUploadController::uploadGeneralBouquetPhoto($req->general_photo,$bouquet->id,'g');
             if(isset($req->general_photo_hover))
                 FileUploadController::uploadGeneralBouquetPhoto($req->general_photo_hover,$bouquet->id,'gh');
@@ -203,7 +203,7 @@ class BouquetRepositoryEloquent extends BaseRepository implements BouquetReposit
                     FileUploadController::uploadGeneralBouquetPhoto($req->general_photo_hover,$bouquet->id,'gh');
             }
         }
-        
+
     }
 
     public function deleteBouquet($id)

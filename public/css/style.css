@@ -1,15 +1,15 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
 -------------------------------- */
 @font-face {
-  font-family: latoregular; 
-  src: url(/fonts/LatoRegular.woff); 
+  font-family: latoregular;
+  src: url(/fonts/LatoRegular.woff);
 }
 @font-face {
-  font-family: latobold; 
-  src: url(/fonts/LatoBold.woff); 
+  font-family: latobold;
+  src: url(/fonts/LatoBold.woff);
 }
 
 *, *::after, *::before {
@@ -62,9 +62,9 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main components 
+Main components
 
 -------------------------------- */
 .cd-main-content, .cd-main-header {
@@ -135,7 +135,7 @@ Main components
   position: absolute;
   font-size: 1.5em!important;
   left:3%;
-  top:25%;  
+  top:25%;
 }
 .cd-logo {
   position: absolute;
@@ -157,7 +157,7 @@ Main components
   }
   .cd-logo-icon{
     left:3%;
-    top:25%;  
+    top:25%;
   }
 }
 @media only screen and (max-width: 420px){
@@ -251,7 +251,7 @@ Main components
   height: 22px;
   fill: #333333;
   margin-right: 10px;
-  
+
 }
 .type-link:hover{
   color:#43a047!important;
@@ -552,9 +552,9 @@ Main components
 .cd-primary-nav .cd-nav-gallery .cd-nav-item h3, .cd-primary-nav .cd-nav-icons .cd-nav-item h3 {
   overflow: hidden;
   text-overflow: ellipsis;
-  
+
   /* margin-top: 30px; */
-  
+
 }
 .cd-primary-nav .cd-nav-icons .cd-nav-item h3:hover {
   color: #43a047;
@@ -1171,9 +1171,9 @@ Main components
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-support for no js 
+support for no js
 
 -------------------------------- */
 .no-js .cd-primary-nav {
@@ -1206,4 +1206,8 @@ support for no js
   .no-js .nav-is-fixed .cd-primary-nav {
     position: fixed;
   }
+}
+
+.about-text, .delivery-text {
+    font-size: 24px;
 }
